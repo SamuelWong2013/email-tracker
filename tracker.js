@@ -16,4 +16,4 @@ app.get('/track/:id', (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log('追踪服务器运行在 http://localhost:3000'));
+app.listen(process.env.PORT || 3000, () => console.log('追踪服务器已启动'));
